@@ -4,9 +4,11 @@
 /* Font: Roboto Mono (Weights: 100, 200, 300, 400, 500, 600 and 700) */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
-* {
+body {
     background-color: #121212;
     color: #FFFFFF;
+
+    margin: auto;
 
     font-family: 'Roboto';
     font-style: normal;
@@ -15,7 +17,45 @@
 
 /* Navigation bar */
 nav {
-    
+    background-color: #090909;
+
+    overflow: auto;
+    padding: 2% 3%;
+}
+
+.nav-left {
+    float: left;
+}
+
+.nav-title {
+    margin: 0px;
+
+    font-family: 'Roboto';
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.nav-description {
+    margin: 0px;
+
+    font-family: 'Roboto Mono';
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.nav-right {
+    float: right;
+}
+
+.nav-link {
+    color: #FFFFFF;
+
+    padding: 10px 0px 0px 2pc;
+
+    text-decoration: none;
+    font-family: 'Roboto Mono';
+    font-size: 20px;
+    font-weight: 400;
 }
 
 /* Page content */
