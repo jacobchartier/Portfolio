@@ -8,19 +8,25 @@ body {
     background-color: #121212;
     color: #FFFFFF;
 
-    margin: auto;
+    margin: 0%;
 
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 200;
+
+    position: relative;
+    min-height: 100vh;
 }
 
 /* Navigation bar */
 nav {
     background-color: #090909;
 
-    overflow: auto;
-    padding: 2% 3%;
+    z-index: 1;
+    position: fixed;
+    top: 0px;
+    width: 90%;
+    padding: 35px 5%;
 }
 
 .nav-left {
@@ -31,7 +37,7 @@ nav {
     margin: 0px;
 
     font-family: 'Roboto';
-    font-size: 24px;
+    font-size: 25px;
     font-weight: 700;
 }
 
@@ -50,7 +56,7 @@ nav {
 .nav-link {
     color: #FFFFFF;
 
-    padding: 10px 0px 0px 2pc;
+    margin: 10px 0px 0px 30px;
 
     text-decoration: none;
     font-family: 'Roboto Mono';
@@ -60,10 +66,41 @@ nav {
 
 /* Page content */
 main {
-
+    padding: 110px 0px 200px 0px;
 }
 
 /* Footer */
 footer {
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+    height: max-content;
+    max-height: 200px;
 
+    padding: 50px 5%;
+    background-color: #090909;
+}
+
+.footer-title {
+    margin: 0px 0px 5px 0px;
+    font-size: 25px;
+}
+
+.footer-icon {
+    margin: 0px 15px 0px 0px;
+    font-size: 28px;
+}
+
+.footer-link {
+    color: #FFFFFF;
+
+    text-decoration: none;
+}
+
+.footer-github:hover {
+    color: #C9510C;
+}
+
+.footer-linkedin:hover {
+    color: #0072B1;
 }
