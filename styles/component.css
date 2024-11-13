@@ -1,0 +1,10 @@
+/*  File: component.css */
+/*  Purpose: define the style of the page components (eg. buttons, links, etc.) */
+
+.left { float: left; }
+.right { float: right; }
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}

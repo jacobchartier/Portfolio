@@ -1,0 +1,75 @@
+/*  File: base-style.css */
+/*  Purpose: define the base style of the page (eg. navbar, sections, footer) */
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #101010;
+    color: #FFFFFF;
+
+    font-family: 'Fira Sans';
+    font-style: normal;
+}
+
+/* Navigation bar */
+nav {
+    background-color: #00000080;
+    backdrop-filter: blur(20px);
+
+    z-index: 1;
+    position: fixed;
+    
+    display: none; 
+    box-sizing: border-box;
+    vertical-align: middle;
+    align-content: center;
+
+    margin: 0px;
+    padding: 0px 5%;
+
+    top: 0;
+    width: 100%;
+
+    left: 0;
+    height: 75px;
+    max-height: 75px;
+}
+
+.nav-left {
+    float: left;
+
+    width: fit-content;
+    max-height: 100%;
+}
+
+.nav-right {
+    float: right;
+
+    width: fit-content;
+    height: fit-content;
+    max-height: 100%;
+}
+
+.nav-title {
+    opacity: 0%;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.nav-link {
+    opacity: 0%;
+    margin-left: 20px;
+    color: #C7C7C7;
+
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.nav-link:hover {
+    color: #FFFFFF;
+}
