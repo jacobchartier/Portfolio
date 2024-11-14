@@ -1,7 +1,9 @@
 /*  File: base-style.css */
 /*  Purpose: define the base style of the page (eg. navbar, sections, footer) */
 
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
     margin: 0;
@@ -36,8 +38,8 @@ nav {
     width: 100%;
 
     left: 0;
-    height: 75px;
-    max-height: 75px;
+    height: 100px;
+    max-height: 100px;
 }
 
 .nav-left {
@@ -49,6 +51,7 @@ nav {
 
 .nav-right {
     float: right;
+    transform: translateY(25%);
 
     width: fit-content;
     height: fit-content;
@@ -61,13 +64,22 @@ nav {
     font-weight: 900;
 }
 
-.nav-link {
+.nav-subtitle {
     opacity: 0%;
-    margin-left: 20px;
+
+    font-family: 'Fira Mono';
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.nav-link {
+    font-family: 'Fira Sans';
+    opacity: 0%;
+    margin-left: 35px;
     color: #C7C7C7;
 
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .nav-link:hover {
