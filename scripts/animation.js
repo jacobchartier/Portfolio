@@ -1,4 +1,3 @@
-const typeWritterSpeed = 120;
 let isNavbarRendered = false;
 
 const navbarAnimDuration = 1000, dropdownAnimDuration = 300;
@@ -10,9 +9,11 @@ $(document).ready(function() {
         })
 
         isNavbarRendered = true;
-        typeWritter("nav-title-text", GetText("#nav-title-text"), typeWritterSpeed);
-        typeWritter("nav-subtitle-text", GetText("#nav-subtitle-text"), typeWritterSpeed+100);
 
+        typewritterAnimation("nav-title-text");
+        typewritterAnimation("nav-subtitle-text");
+
+        setTimeout(typewritterAnimation('nav-subtitle-breadcrumbs'), 1000);
     });
 });
 
@@ -43,22 +44,84 @@ $('.dropdown').mouseleave(function() {
     $('#dropdown-projects, #dropdown-background').slideUp(dropdownAnimDuration).delay();
 });
 
-function typeWritter(id, text, speed) {
+// [Get Animation Content] Function to get, with an id, the content for an animation.
+//   Returns the content as a string.
+function getAnimationContent(id) {
+    return document.querySelector('#' + id).dataset.animationContent;
+}
+
+// [Get Animation Speed] Function to get, with an id, the speed for an animation.
+//   Returns the number in miliseconds
+function getAnimationSpeed(id) {
+    return document.querySelector('#' + id).dataset.animationSpeed;
+}
+
+// [Type Writter Animation] Function to play a type writting animation.
+//    The text can be set in the 'data-typewritter-text' attribute inside the html.
+//    The animation speed can be set in the 'data-typewritter-speed' attribute inside the html.
+function typewritterAnimation(id) {
+    // Variable to keep track of the current index.
     let index = 0;
 
-    function nextChar() {
-        if (index < text.length) {
-            document.getElementById(id).innerHTML += text.charAt(index++);
-            setTimeout(nextChar, speed);
+    // Recursive function that add the next character in the html.
+    function insertNextChar() {
+        // Check if the current index is less than the text length.
+        if (index < getAnimationContent(id).length) {
+            // Add the character of the current index to the html document.
+            document.getElementById(id).innerHTML += getAnimationContent(id).charAt(index++);
+
+            // Call itself to print the next character.
+            setTimeout(insertNextChar, getAnimationSpeed(id));
+        }
+    }
+    
+    // Call of insertNextChar to start the animation.
+    insertNextChar();
+}
+
+function typedeleterAnimation(id, start = 0) {
+    let index = getAnimationContent(id).length;
+
+    function removePreviousChar() {
+        if (index > 0) {
+            document.getElementById(id).innerHTML = getAnimationContent(id).slice(start, index--);
+            setTimeout(removePreviousChar, getAnimationSpeed(id));
+        } 
+    }
+
+    removePreviousChar();
+}
+
+let breadcrumbs = false;
+
+function typewritterTransition(destination, text, start = 0) {
+    if (breadcrumbs === false) 
+        typewritterAnimation('breadcrumbs-separator');
+
+    breadcrumbs = true;
+
+    let index = document.getElementById(destination).innerHTML.length;
+
+    function insertNextChar() {
+        // Check if the current index is less than the text length.
+        if (index < getAnimationContent(text).length) {
+            // Add the character of the current index to the html document.
+            document.getElementById(destination).innerHTML += getAnimationContent(text).charAt(index++);
+
+            // Call itself to print the next character.
+            setTimeout(insertNextChar, getAnimationSpeed(destination));
         }
     }
 
-    if (index < text.length) {
-        document.getElementById(id).innerHTML += text.charAt(index++);
-        setTimeout(nextChar, speed);
+    function removePreviousChar() {
+        if (index > -1) {
+            document.getElementById(destination).innerHTML = document.getElementById(destination).innerHTML.slice(start, index--);
+            setTimeout(removePreviousChar, getAnimationSpeed(destination));
+        }
+        else {
+            insertNextChar();
+        }
     }
-}
 
-function GetText(id) {
-    return document.querySelector(id).dataset.text;
+    removePreviousChar();
 }
