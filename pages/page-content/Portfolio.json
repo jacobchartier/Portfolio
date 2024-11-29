@@ -1,0 +1,41 @@
+{
+    "name": "Portfolio",
+    "description": "Personal website",
+	"technologies": [
+		{
+			"name": "HTML",
+			"icon": "fa-brands fa-html5 html"
+		},
+		{
+			"name": "CSS",
+			"icon": "fa-brands fa-css css"
+		},
+		{
+			"name": "JavaScript",
+			"icon": "fa-brands fa-js javascript"
+		}
+	],
+	"links": [
+		{
+			"name": "Github",
+			"icon": "fa-brands fa-github",
+			"href": "https://github.com/jacobchartier/Portfolio"
+		},
+        {
+            "name": "jacobchartier.com",
+            "href": "https://jacobchartier.com/"
+        }
+	],
+    "assets": [
+		{
+			"name": "Logo",
+			"description": "",
+			"category": "Branding",
+			"type": "CONCEPT ART",
+			"image": {
+                "path": "../assets/images/TheLastBite/logo.png",
+                "alt": "The Last Bite logo"
+            }
+		}
+    ]
+}

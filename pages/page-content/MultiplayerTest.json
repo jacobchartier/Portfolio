@@ -1,0 +1,20 @@
+{
+    "name": "",
+    "description": "",
+	"banner": "../",
+	"links": [
+		{
+			"name": "Github",
+			"link": "https://github.com/jacobchartier/"
+		}
+	],
+    "assets": [
+		{
+			"name": "???",
+			"description": "",
+			"category": "???",
+			"type": "CONCEPT ART",
+			"image": "../assets/images/ConnectionTerminated/"
+		}
+    ]
+}

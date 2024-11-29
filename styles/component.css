@@ -4,6 +4,13 @@
 .left { float: left; }
 .right { float: right; }
 
+.middle {
+    position: absolute;
+
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 a {
     color: #FFFFFF;
     text-decoration: none;
@@ -13,16 +20,66 @@ a {
     font-size: 10px;
 }
 
+/* Asset Showcase Cards */
+.showcase {
+    padding: 10px;
+}
+
+.asset-image {
+    /* Sizing */
+    width: auto;
+    height: 170px;
+
+    /* Positioning */
+    margin: 0px;
+    padding: 0px;
+
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.asset-category {
+    font-family: var(--title-font-family);
+    font-weight: var(--title-weight);
+    font-size: var(--title-size);
+
+    margin: 10px 0px 0px 10px;
+}
+
+.asset-name {
+    font-family: var(--subtitle-font-family);
+    font-weight: var(--subtitle-weight);
+    font-size: var(--subtitle-size);
+
+    margin: 0px 0px 0px 10px;
+}
+
+.asset-type {
+    font-family: var(--title-font-family);
+    font-weight: var(--title-weight);
+    font-size: var(--title-size);
+
+    position: absolute;
+
+    margin: 0px 10px 10px 0px;
+    bottom: 0px;
+    right: 0px;
+}
+
 /* Cards */
 .card {
-    background-color: #00000080;
-    backdrop-filter: blur(20px);
+    background-color: var(--container-bg-color);
+    backdrop-filter: var(--container-backdrop-filter);
 
-    border: 1px solid #ffffff20;
-    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+}
 
-    width: 300px;
-    height: 450px;
+.card-body {
+    position: relative;
 }
 
 .card-title {
@@ -44,94 +101,6 @@ a {
     margin: 20px 20px 0px 20px;
     border-radius: 15px;
     width: fit-content;
-}
-/* Dropdown */
-.dropdown {
-    padding-bottom: 10px;
-
-    float: left;
-    overflow: hidden;
-}
-  
-.dropdown-content {
-    font-weight: bolder;
-
-    display: none;
-    position: absolute;
-
-    z-index: 1;
-    min-width: 160px;
-    margin: 5px 0 0 15px;
-    padding: 4px;
-
-    background-color: #12121280;
-    backdrop-filter: blur(50px);
-
-    border: 1px solid #ffffff20;
-    border-radius: 15px;
-}
-  
-.dropdown-content a {
-    color: #FFFFFF;
-    text-decoration: none;
-    text-align: left;
-
-    display: block; 
-    float: none;
-    margin: 1px;
-    padding: 16px 16px;
-
-    border-radius: 15px;
-}
-  
-.dropdown-content a:hover {
-    background-color: #09090980;
-}
-
-.content-desc {
-    font-family: 'Fira Mono';
-
-    font-size: smaller;
-    color: #C7C7C7;
-}
-
-
-/* Time lines */
-.timeline { 
-    width: 5px;
-}
-
-.timeline-section {
-}
-
-.timeline-bullet::after { 
-    content: '';
-    position: inherit;
-    width: 15px;
-    height: 15px;
-    right: 12px;
-    background-color: #90fff0;
-    border: 4px solid #90fff080;
-    top: -3px;
-    border-radius: 50%;
-    z-index: 1;
-    float: left;
-}
-
-.timeline-solid { 
-    position: inherit;
-    height: 100px;
-    width: 0px;
-    border-radius: 10px;
-    border: 3px solid #80808080;
-}
-
-.timeline-dashed {
-    position: inherit;
-    height: 100px;
-    width: 0px;
-    border-radius: 10px;
-    border: 3px dashed #80808080;
 }
 
 .title {
@@ -158,16 +127,14 @@ link {
 }
 
 
-.css { 
-    font-size: 25px;
-    color: #663399;
-}
 
+.pattern-blueprint {
+    width: max-content;
+    min-width: 300px;
+    height: 300px;
 
-.container {
-    width: 80%;
-    height: 80%;
-    
+    border: 2px solid #FFFFFF;
+
     background-color: #101010;
     background-image:
       linear-gradient(#aaaaaa80 2px, transparent 2px),
@@ -180,9 +147,15 @@ link {
 
 .header-project-name {
     margin-top: 50px;
-    font-family: 'Fira Mono'; 
+    font-family: 'Fira Sans'; 
     font-size: 64px;
     font-weight: 700;
+}
+
+.header-project-description {
+    font-family: 'Fira Sans'; 
+    font-size: 32px;
+    font-weight: 400;
 }
 
 .header-title {
@@ -190,4 +163,24 @@ link {
     font-family: 'Fira Mono';
     font-size: 36px;
     font-weight: 700;
+}
+
+.html {
+    color: #F06529;
+}
+
+.css { 
+    color: #663399;
+}
+
+.javascript {
+    color: #F0DB4F
+}
+
+.red { background-color: red; }
+.blue { background-color: blue; }
+.green { background-color: green; }
+
+.tttt {
+    display: flex;
 }
