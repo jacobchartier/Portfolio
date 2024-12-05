@@ -13,7 +13,8 @@
         <link rel="stylesheet" href="../styles/structure.css">
         <link rel="stylesheet" href="../styles/component.css">
 
-        <script src="../scripts/animation.js" defer></script>
+        <script src="../scripts/Animation.js" defer></script>
+        <script src="../scripts/PageBuilder.js" defer></script>
 
         <!-- Libraries -->
         <script src="https://kit.fontawesome.com/25c1aaeca1.js" crossorigin="anonymous"></script>
@@ -22,7 +23,7 @@
     <body>
         <!-- Navigation bar -->
         <nav>
-            <div class="nav-left">
+            <div class="left">
                 <h4 class="nav-title" id="nav-title">
                     <a href="../index.html" id="nav-title-text" data-animation-content="Jacob Chartier" data-animation-speed="120"></a>
                 </h4>
@@ -52,118 +53,35 @@
             </div>
         </nav>
 
-        <header class="container">
-            <div class="header-left">
-                <p class="header-project-name" id="header-project-name">Portfolio</p>
+        <header>
+            <div class="left">
+                <p class="header-project-name" id="header-title">Projets</p>
+                <p class="header-project-description" id="header-description">description</p>
             </div>
-            
-                <div class="header-right">
 
-                    <div class="card">
-                        <div class="card-body">
-                            <h4 class="card-title">Tous les projets</h4>
-                            <a onclick="typewritterTransition('nav-subtitle-breadcrumbs', 'project-breadcrumbs-portfolio')" href="#project-portfolio" class="card-description">Portfolio</a><br>
-                            <a onclick="typewritterTransition('nav-subtitle-breadcrumbs', 'project-breadcrumbs-connectionterminated')" href="#project-connectionterminated" class="card-description">Connection Terminated</a><br>
-                            <a onclick="typewritterTransition('nav-subtitle-breadcrumbs', 'project-breadcrumbs-rythmicslash')" href="#project-rythmicslash" class="card-description">Rythmic Slash</a><br>
-                            <a onclick="typewritterTransition('nav-subtitle-breadcrumbs', 'project-breadcrumbs-multiplayertest')" href="#project-multiplayertest" class="card-description">Multiplayer Test</a><br>
-                            <a onclick="typewritterTransition('nav-subtitle-breadcrumbs', 'project-breadcrumbs-towerdefense')" href="#project-towerdefense" class="card-description">Tower Defense</a><br>
-                            <a onclick="typewritterTransition('nav-subtitle-breadcrumbs', 'project-breadcrumbs-thelastbite')" href="#project-thelastbite" class="card-description">The Last Bite</a><br>
-                        </div>
-                    </div>
-                </div>
+            <div class="right" id="header-links">
+                
             </div>
         </header>
 
+        
+
         <main>
-            <section id="project-portfolio">
-                <div class="left">
-                    <h4 class="section-title">Portfolio</h4>
-                    <p class="section-subtitle"><strong>08.11.2024</strong> - <strong><span class="tag-present">Aujourd'hui</span></strong>
-                </p>
-                    
-                    <p class="section-description">This is my personal portfolio made using HTML, CSS, JavaScript and tools like Bootstrap and jQuery.</p>
-                </div>
-
-                <div class="right section-links">
-                    <a href="https://github.com/jacobchartier/Portfolio" class="link github"><i class="fa-brands fa-github"></i> Github</a>
-                    <a href="https://jacobchartier.com/" class="link website"><i class="fa-solid fa-link"></i> jacobchartier.com</a>
-                </div>
-            </section>
-            
-            <hr>
-
-            <section id="project-connectionterminated">
-                <div class="left">
-                    <h4 class="section-title">Connection Terminated</h4>
-                    <p class="section-subtitle"><strong>12.01.2024</strong> - <strong>19.04.2024</strong></p>
-                    
-                    <p class="section-description">Turn-based open world game made with Unity, where you need to fight enemies with different items and attack.</p>
-                </div>
-
-                <div class="right section-links">
-                    <a href="https://github.com/jacobchartier/Portfolio" class="link github"><i class="fa-brands fa-github"></i> Github</a>
-                </div>
-            </section>
-
-            <hr>
-            
-            <section id="project-rythmicslash">
-            <div class="left">
-                <h4 class="section-title">Rythmic Slash</h4>
-                <p class="section-subtitle"><strong>18.10.2023</strong> - <strong>05.12.2023</strong></p>
                 
-                <p class="section-description"></p>
-            </div>
-
-            <div class="right section-links">
-                <a href="https://github.com/jacobchartier/Portfolio" class="link github"><i class="fa-brands fa-github"></i> Github</a>
-            </div>
-            </section>
-            
-            <hr>
-            
-            <section id="project-multiplayertest">
-                <div class="left">
-                <h4 class="section-title">Multiplayer Test</h4>
-                <p class="section-subtitle"><strong>24.01.2024</strong> - <strong>01.05.2024</strong></p>
-                
-                <p class="section-description"></p>
-            </div>
-
-            <div class="right section-links">
-                <a href="https://github.com/jacobchartier/Portfolio" class="link github"><i class="fa-brands fa-github"></i> Github</a>
-            </div>
-            </section>
-            
-            <hr>
-            
-            <section id="project-towerdefense">
-                <div class="left">
-                <h4 class="section-title">Tower Defense</h4>
-                <p class="section-subtitle"><strong>21.03.2024</strong> - <strong>29.03.2024</strong></p>
-                
-                <p class="section-description"></p>
-            </div>
-
-            <div class="right section-links">
-                <a href="https://github.com/jacobchartier/Portfolio" class="link github"><i class="fa-brands fa-github"></i> Github</a>
-            </div>
-            </section>
-            
-            <hr>
-            
-            <section id="project-thelastbite">
-                <div class="left">
-                <h4 class="section-title">The Last Bite</h4>
-                <p class="section-subtitle"><strong>31.01.2023</strong> - <strong>03.05.2024</strong></p>
-                
-                <p class="section-description"></p>
-            </div>
-
-            <div class="right section-links">
-                <a href="https://github.com/jacobchartier/Portfolio" class="link github"><i class="fa-brands fa-github"></i> Github</a>
-            </div>
-            </section>
         </main>
+        <aside>
+            <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Tous les projets</h4>
+                <a onclick="typewritterTransition('nav-subtitle-breadcrumbs', 'project-breadcrumbs-portfolio'), loadProject('Portfolio')" href="#project-portfolio" class="card-description">Portfolio</a><br>
+                <a onclick="typewritterTransition('nav-subtitle-breadcrumbs', 'project-breadcrumbs-connectionterminated'), loadProject('ConnectionTerminated')" href="#project-connectionterminated" class="card-description">Connection Terminated</a><br>
+                <a onclick="typewritterTransition('nav-subtitle-breadcrumbs', 'project-breadcrumbs-rythmicslash'), loadProject('RythmicSlash')" href="#project-rythmicslash" class="card-description">Rythmic Slash</a><br>
+                <a onclick="typewritterTransition('nav-subtitle-breadcrumbs', 'project-breadcrumbs-multiplayertest'), loadProject('MultiplayerTest')" href="#project-multiplayertest" class="card-description">Multiplayer Test</a><br>
+                <a onclick="typewritterTransition('nav-subtitle-breadcrumbs', 'project-breadcrumbs-towerdefense'), loadProject('TowerDefense')" href="#project-towerdefense" class="card-description">Tower Defense</a><br>
+                <a onclick="typewritterTransition('nav-subtitle-breadcrumbs', 'project-breadcrumbs-thelastbite'), loadPage('page-content/TheLastBite1.json')" href="#project-thelastbite" class="card-description">The Last Bite</a><br>
+                <a onclick="loadPage('page-content/page.json')" href="#" class="card-description">page loader</a><br>
+            </div>
+        </div>
+    </aside>
     </body>
 </html>

@@ -1,0 +1,23 @@
+{
+    "name": "",
+    "description": "",
+	"banner": "../",
+	"links": [
+		{
+			"name": "",
+			"link": "https://"
+		}
+	],
+    "assets": [
+		{
+			"name": "",
+			"description": "",
+			"category": "",
+			"type": "",
+			"image": {
+                "path": "../assets/images/",
+                "alt": ""
+            }
+		}
+    ]
+}

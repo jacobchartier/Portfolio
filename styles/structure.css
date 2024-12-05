@@ -5,6 +5,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+:root {
+    /* Backgrounds variables */
+    --main-background-color: #101010;
+
+    --container-background-color: #00000080;
+    --container-backdrop-filter: blur(20px);
+
+    /* Typography */
+    /* Title (Applies to: Navbar, Sections, Footer) */
+    --title-font-family: 'Fira Sans';
+    --title-weight: 900;
+    --title-size: 24px;
+
+    /* Subtitle (Applies to: Navbar, Sections, Footer) */
+    --subtitle-font-family: 'Fira Mono';
+    --subtitle-weight: 500;
+    --subtitle-size: 14px;
+
+    /* Text (Applies to: Everything) */
+    --text-font-family: 'Fira Sans';
+    --subtitle-weight: 400;
+    --subtitle-size: 16px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -16,15 +40,15 @@ body {
     background-color: #101010;
     color: #FFFFFF;
 
-    font-family: 'Fira Sans';
-    font-style: normal;
-
+    font-family: var(--text-font-family);
+    font-size: var(--text-size);
+    font-weight: var(--text-weight);
 }
 
-/* Navigation bar */
+/* Top navigation bar */
 nav {
-    background-color: #00000080;
-    backdrop-filter: blur(20px);
+    background-color: var(--container-background-color);
+    backdrop-filter: var(--container-backdrop-filter);
 
     z-index: 1;
     position: fixed;
@@ -45,13 +69,6 @@ nav {
     max-height: 100px;
 }
 
-.nav-left {
-    float: left;
-
-    width: fit-content;
-    max-height: 100%;
-}
-
 .nav-right {
     float: right;
     transform: translateY(25%);
@@ -63,16 +80,17 @@ nav {
 
 .nav-title {
     opacity: 0%;
-    font-size: 25px;
-    font-weight: 900;
+    font-family: var(--title-font-family);
+    font-size: var(--title-size);
+    font-weight: var(--title-weight);
 }
 
 .nav-subtitle {
     opacity: 0%;
 
-    font-family: 'Fira Mono';
-    font-size: 14px;
-    font-weight: 700;
+    font-family: var(--subtitle-font-family);
+    font-size: var(--subtitle-size);
+    font-weight: var(--subtitle-weight);
 }
 
 .nav-link {
@@ -97,16 +115,12 @@ main {
     flex-direction: column;
 }
 
+/* Header */
 header {
     padding: 110px 10% 0px 10%;
     margin: 0%;
-    background-image: url("../assets/images/background.png");
     background-size: cover;
     min-height: 600px;
-}
-
-.header-left {
-    float: left;
 }
 
 .header-right {
@@ -129,14 +143,21 @@ section {
 }
 
 .section-title {
-    font-size: 24px;
+    font-family: var(--title-font-family);
+    font-size: var(--title-size);
+    font-weight: var(--title-weight);
 }
 
 .section-subtitle {
-    font-family: 'Fira Mono';
-    font-size: 14px;
+    font-family: var(--subtitle-font-family);
+    font-size: var(--subtitle-size);
+    font-weight: var(--subtitle-weight);
 }
 
 .section-description {
     padding: 35px 0px 35px 0px;
+    
+    font-family: var(--text-font-family);
+    font-size: var(--text-size);
+    font-weight: var(--text-weight);
 }

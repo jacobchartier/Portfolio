@@ -1,0 +1,33 @@
+{
+    "name": "page.name",
+    "description": "page.description",
+    "header": {
+        "title": "header.title",
+        "description": "header.description",
+        "image": "../assets/images/background.png"
+    },
+
+    "sections": [
+        {
+            "title": "section.title 1",
+            "description": "section.description",
+            "id": "section1",
+            "class": "blue",
+            "content": ""
+        },
+        {
+            "title": "section.title 2",
+            "description": "section.description",
+            "id": "section2",
+            "class": "red",
+            "content": ""
+        },
+        {
+            "title": "section.title 3",
+            "description": "section.description",
+            "id": "section3",
+            "class": "green",
+            "content": ""
+        }
+    ]
+}
