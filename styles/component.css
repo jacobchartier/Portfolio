@@ -2,7 +2,10 @@
 /*  Purpose: define the style of the page components (eg. buttons, links, etc.) */
 
 .left { float: left; }
-.right { float: right; }
+.right { 
+    float: right; 
+    right: 0px;
+}
 
 .middle {
     position: absolute;
@@ -161,7 +164,7 @@ link {
 .header-title {
     margin-top: 50px;
     font-family: 'Fira Mono';
-    font-size: 36px;
+    font-size: 64px;
     font-weight: 700;
 }
 

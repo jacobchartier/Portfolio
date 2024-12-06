@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="../styles/structure.css">
         <link rel="stylesheet" href="../styles/component.css">
 
-        <script src="../scripts/animation.js" defer></script>
+        <script src="../scripts/Animation.js" defer></script>
 
         <!-- Libraries -->
         <script src="https://kit.fontawesome.com/25c1aaeca1.js" crossorigin="anonymous"></script>
@@ -22,7 +22,7 @@
     <body>
         <!-- Navigation bar -->
         <nav>
-            <div class="nav-left">
+            <div class="left">
                 <h4 class="nav-title" id="nav-title">
                     <a href="../index.html" id="nav-title-text" data-animation-content="Jacob Chartier" data-animation-speed="120"></a>
                 </h4>
@@ -40,5 +40,41 @@
                 <a class="nav-link" id="link-contact" href="../pages/contact.html">Contact</a>
             </div>
         </nav>
+
+        <header>
+            <div class="left">
+                <h1 class="header-title">Get in touch</h1>
+
+                <div class="left">
+                    <h2>Contact information</h2>
+                    <p class="header-description"><i class="fa-regular fa-envelope"></i> <a href="mailto:jacobchartier@outlook.com">jacobchartier@outlook.com</a></p>
+                    <p class="header-description"><i class="fa-brands fa-linkedin"></i> <a href="http://linkedin.com/in/jacobchartier/">in/jacobchartier</a></p>
+                </div>
+            </div>
+
+            <div class="header-right">
+                <form action="contact">
+                    <h2>Send a message</h2>
+
+                    <div class="form-container">
+                        <label for="name"><i class="fa-solid fa-signature"></i> Name</label>
+                        <input type="text" name="name" id="name" placeholder="John Doe">
+                    </div>
+                    <div class="form-container">
+                        <label for="email-adress"><i class="fa-regular fa-envelope"></i> Email Adress</label>
+                        <input type="email" name="email-adress" id="email" placeholder="name@company.com">
+                    </div>
+                    <div class="form-container">
+                        <label for="message"><i class="fa-regular fa-message"></i> Message</label>
+                        <input type="text" name="message" id="object" placeholder="Object">
+                        <textarea name="message" id="msg" placeholder="Message"></textarea>
+                    </div>
+                    <div class="form-container row right">
+                        <input type="reset" value="Reset">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </header>
     </body>
 </html>
