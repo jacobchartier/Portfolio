@@ -1,68 +1,44 @@
 {
     "name": "The Last Bite",
-    "description": "Platformer game made with SDL2",
-	"banner": "../",
-	"technologies": [
-		{
-			"name": "HTML",
-			"icon": "html5"
-		},
-		{
-			"name": "CSS",
-			"icon": "css"
-		},
-		{
-			"name": "JavaScript",
-			"icon": "js"
-		}
-	],
-	"links": [
-		{
-			"name": "Github",
-			"icon": "fa-brands fa-github",
-			"href": "https://github.com/jacobchartier/TheLastBite"
-		}
-	],
-    "assets": [
-		{
-			"name": "Logo",
-			"description": "",
-			"category": "Branding",
-			"type": "CONCEPT ART",
-			"image": {
-                "path": "../assets/images/TheLastBite/logo.png",
-                "alt": "The Last Bite logo"
+    "description": "",
+    "header": {
+        "title": "The Last Bite",
+        "description": "Jeu style platformer fait avec SDL2 en C#",
+        "image": "../assets/images/background.png",
+        "links": [
+            {
+                "text": "<i class=\"fa-brands fa-github\"></i> Github",
+                "href": "https://github.com/jacobchartier/TheLastBite"
             }
-		},
-		{
-			"name": "Thruster",
-			"description": "La première pièce nécessaire afin de pouvoir réparer la fusé",
-			"category": "Rocket Component",
-			"type": "CONCEPT ART",
-			"image": {
-                "path": "../assets/images/TheLastBite/thruster.png",
-                "alt": "Thruster"
-            }
-		},
-		{
-			"name": "Plutonium",
-			"description": "La deuxième pièce nécessaire afin de pouvoir réparer la fusé",
-			"category": "Rocket Component",
-			"type": "CONCEPT ART",
-			"image": {
-                "path": "../assets/images/TheLastBite/plutonium.png",
-                "alt": "Plutonium"
-            }
-		},
-		{
-			"name": "V.1.0",
-			"description": "",
-			"category": "Gameplay",
-			"type": "PROTOTYPE",
-			"image": {
-                "path": "../assets/images/TheLastBite/gameplay.png",
-                "alt": "gameplay"
-            }
-		}
+        ]
+    },
+    "sections": [
+        {
+            "title": "Assets made for this project:",
+            "description": "section.description",
+            "id": "project-assets",
+            "class": "blue",
+            "content": "<div class=\"tttt\"><div class=\"card-body pattern-blueprint\"><p class=\"asset-category\">Branding</p>\n<p class=\"asset-name\">Logo</p>\n<img class=\"asset-image\" src=\"..\\assets\\images\\TheLastBite\\logo.png\" alt=\"Logo\">\n<p class=\"asset-type\">CONCEPT ART</p></div><div class=\"card-body pattern-blueprint\"><p class=\"asset-category\">Branding</p>\n<p class=\"asset-name\">Logo</p>\n<img class=\"asset-image\" src=\"..\\assets\\images\\TheLastBite\\logo.png\" alt=\"Logo\">\n<p class=\"asset-type\">CONCEPT ART</p></div></div>"
+        },
+        {
+            "title": "Developpment screenshot",
+            "description": "section.description",
+            "id": "project-dev",
+            "class": "red",
+            "content": "<div class=\"tttt\"><div class=\"card-body pattern-blueprint\"><p class=\"asset-category\">Branding</p>\n<p class=\"asset-name\">Logo</p>\n<img class=\"asset-image\" src=\"..\\assets\\images\\TheLastBite\\logo.png\" alt=\"Logo\">\n<p class=\"asset-type\">CONCEPT ART</p></div><div class=\"card-body pattern-blueprint\"><p class=\"asset-category\">Branding</p>\n<p class=\"asset-name\">Logo</p>\n<img class=\"asset-image\" src=\"..\\assets\\images\\TheLastBite\\logo.png\" alt=\"Logo\">\n<p class=\"asset-type\">CONCEPT ART</p></div></div>"
+        },
+        {
+            "title": "Developpment screenshot",
+            "description": "section.description",
+            "id": "project-dev",
+            "class": "red",
+            "contents": [
+                {
+                    "type": "show-case",
+                    "asset-title": ""
+                }
+            ],
+            "content": "<div class=\"tttt\"><div class=\"card-body pattern-blueprint\"><p class=\"asset-category\">Branding</p>\n<p class=\"asset-name\">Logo</p>\n<img class=\"asset-image\" src=\"..\\assets\\images\\TheLastBite\\logo.png\" alt=\"Logo\">\n<p class=\"asset-type\">CONCEPT ART</p></div><div class=\"card-body pattern-blueprint\"><p class=\"asset-category\">Branding</p>\n<p class=\"asset-name\">Logo</p>\n<img class=\"asset-image\" src=\"..\\assets\\images\\TheLastBite\\logo.png\" alt=\"Logo\">\n<p class=\"asset-type\">CONCEPT ART</p></div></div>"
+        }
     ]
 }

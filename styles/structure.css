@@ -132,30 +132,31 @@ header {
     width: 60%;
 }
 
-h2 {
-    font-size: 30px;
-    padding: 20px;
-}
-
 section {
     padding: 25px, 50px, 25px, 50px;
     margin-top: 25px;
+
+    border-radius: 15px;
 }
 
 .section-title {
+    padding: 20px 0px 5px 20px;
+
     font-family: var(--title-font-family);
     font-size: var(--title-size);
     font-weight: var(--title-weight);
 }
 
 .section-subtitle {
+    padding: 10px;
+
     font-family: var(--subtitle-font-family);
     font-size: var(--subtitle-size);
     font-weight: var(--subtitle-weight);
 }
 
 .section-description {
-    padding: 35px 0px 35px 0px;
+    padding: 5px 0px 20px 20px;
     
     font-family: var(--text-font-family);
     font-size: var(--text-size);

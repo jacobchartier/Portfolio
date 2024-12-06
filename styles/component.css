@@ -183,4 +183,5 @@ link {
 
 .tttt {
     display: flex;
+    justify-content: space-between;
 }
