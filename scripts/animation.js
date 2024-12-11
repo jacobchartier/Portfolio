@@ -8,41 +8,39 @@ $(document).ready(function() {
             $(this).delay(i*20).animate({opacity: "100%"});
         })
 
-        isNavbarRendered = true;
-
         typewritterAnimation("nav-title-text");
         typewritterAnimation("nav-subtitle-text");
 
+        isNavbarRendered = true;
+
+        $("header, section, footer").delay(500).each(function (index) {
+            $(this)
+              .delay(index * 1200) // Delay based on the index (e.g., 200ms for each item)
+              .queue(function (next) {
+                $(this).slideDown(1000);
+                next();
+            });
+        });
+        
         setTimeout(typewritterAnimation('nav-subtitle-breadcrumbs'), 1000);
     });
 });
 
-$('#link-projects, #dropdown-projects').mouseenter(function() {
-    $('#dropdown-background').slideUp(dropdownAnimDuration);
+$(document).ready(function () {
+  
+    // Check and animate elements on scroll
+    function animateOnScroll() {
+        $("header, section, footer").each(function (index) {
+              $(this)
+                .delay(index * 1200) // Delay based on the index (e.g., 200ms for each item)
+                .queue(function (next) {
+                  $(this).slideDown(1000);
+                  next();
+                });
+          });
+    }
 
-        // Make sure that the navbar is rendrered before showing the projects dropdown
-        if (isNavbarRendered)
-            $('#dropdown-projects').slideDown(dropdownAnimDuration);
-        
-        // Delay the animation to make it appear after the navbar is rendered
-        $('#dropdown-projects').delay(navbarAnimDuration).slideDown(dropdownAnimDuration);
-        
-});
-
-$('#link-background, #dropdown-background').mouseenter(function() {
-    $('#dropdown-projects').slideUp(dropdownAnimDuration);
-
-    // Make sure that the navbar is rendrered before showing the background dropdown
-    if (isNavbarRendered) 
-        $('#dropdown-background').slideDown(dropdownAnimDuration);
-        
-    // Delay the animation to make it appear after the navbar is rendered
-    $('#dropdown-background').delay(navbarAnimDuration).slideDown(dropdownAnimDuration);
-});
-
-$('.dropdown').mouseleave(function() {
-    $('#dropdown-projects, #dropdown-background').slideUp(dropdownAnimDuration).delay();
-});
+  });
 
 // [Get Animation Content] Function to get, with an id, the content for an animation.
 //   Returns the content as a string.
@@ -125,3 +123,4 @@ function typewritterTransition(destination, text, start = 0) {
 
     removePreviousChar();
 }
+

@@ -1,5 +1,3 @@
-/*  File: component.css */
-/*  Purpose: define the style of the page components (eg. buttons, links, etc.) */
 
 .left { float: left; }
 .right { 
@@ -23,72 +21,33 @@ a {
     font-size: 10px;
 }
 
-/* Asset Showcase Cards */
-.showcase {
-    padding: 10px;
-}
-
-.asset-image {
-    /* Sizing */
-    width: auto;
-    height: 170px;
-
-    /* Positioning */
-    margin: 0px;
-    padding: 0px;
-
-    position: absolute;
-
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.asset-category {
-    font-family: var(--title-font-family);
-    font-weight: var(--title-weight);
-    font-size: var(--title-size);
-
-    margin: 10px 0px 0px 10px;
-}
-
-.asset-name {
-    font-family: var(--subtitle-font-family);
-    font-weight: var(--subtitle-weight);
-    font-size: var(--subtitle-size);
-
-    margin: 0px 0px 0px 10px;
-}
-
-.asset-type {
-    font-family: var(--title-font-family);
-    font-weight: var(--title-weight);
-    font-size: var(--title-size);
-
-    position: absolute;
-
-    margin: 0px 10px 10px 0px;
-    bottom: 0px;
-    right: 0px;
-}
-
 /* Cards */
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
 .card {
-    background-color: var(--container-bg-color);
+    background-color: var(--container-background-color);
     backdrop-filter: var(--container-backdrop-filter);
+
+    border-radius: 15px;
 
     padding: 10px;
     margin: 10px;
+
+    width: 600px;
 }
 
 .card-body {
     position: relative;
+
 }
 
 .card-title {
     font-size: 24px;
     text-align: center;
-    font-family: 'Fira Mono';
+    font-family: 'Fira Sans';
     padding: 20px 20px 5px 20px;
 }
 
@@ -110,14 +69,13 @@ a {
     padding-left: 20px;
 }
 
-
 .tag-present {
     background-color: #ff004080;
     border-radius: 5px;
     padding: 4px;
 }
 
-link {
+.link {
     background-color: #ff004080;
     border-radius: 5px;
     padding: 4px;
@@ -128,25 +86,6 @@ link {
     display: flex;
     flex-direction: column;
 }
-
-
-
-.pattern-blueprint {
-    width: max-content;
-    min-width: 300px;
-    height: 300px;
-
-    border: 2px solid #FFFFFF;
-
-    background-color: #101010;
-    background-image:
-      linear-gradient(#aaaaaa80 2px, transparent 2px),
-      linear-gradient(90deg, #aaaaaa80 2px, transparent 2px),
-      linear-gradient(#99999980 1px, transparent 1px),
-      linear-gradient(90deg, #99999980 1px, transparent 1px);
-    background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
-    background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
-  }
 
 .header-project-name {
     margin-top: 50px;
@@ -161,30 +100,59 @@ link {
     font-weight: 400;
 }
 
-.header-title {
-    margin-top: 50px;
-    font-family: 'Fira Mono';
-    font-size: 64px;
-    font-weight: 700;
-}
+.html { color: #F06529; }
+.css { color: #663399; }
+.javascript { color: #F0DB4F }
+.csharp { color: #178600;}
+.cpp { color: #f34b7d; }
+.java { color: #b07219;}
 
-.html {
-    color: #F06529;
-}
-
-.css { 
-    color: #663399;
-}
-
-.javascript {
-    color: #F0DB4F
-}
-
-.red { background-color: red; }
-.blue { background-color: blue; }
-.green { background-color: green; }
-
-.tttt {
-    display: flex;
-    justify-content: space-between;
-}
+.timeline {
+    position: relative;
+    max-width: 70%;
+    margin: 50px 0%;
+    padding: 0 20px;
+  }
+  
+  /* Vertical line on the left side */
+  .timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0%; /* Position the line on the left */
+    width: 4px;
+    height: 100%;
+    background: #ffffff;
+  }
+  
+  /* Timeline item */
+  .timeline-item {
+    position: relative;
+    margin: 20px 0;
+  }
+  
+  /* Content box aligned to the right */
+  .timeline-content {
+    position: relative;
+    background: #ffffff00;
+    padding: 15px 20px;
+    border-radius: 5px;
+    width: 70%;
+    margin-left: 0%; /* Push content to the right of the vertical line */
+  }
+  
+  /* Connector circle on the left */
+  .timeline-item::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: -18px; /* Align with the vertical line */
+    transform: translateX(-50%);
+    width: 12px;
+    height: 12px;
+    background-image: linear-gradient(to bottom right, #ff5b5b, #dc50ff);;
+    border: 3px solid #ffffffd5;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
