@@ -1,0 +1,19 @@
+{
+    "name": "Rythmic Slash",
+    "description": "Platformer game made with Unity 2D",
+	"links": [
+		{
+			"name": "Github",
+			"link": "https://github.com/jacobchartier/RythmicSlash"
+		}
+	],
+    "assets": [
+		{
+			"name": "Player",
+			"description": "",
+			"category": "Character",
+			"type": "CONCEPT ART",
+			"image": "../assets/images/RythmicSlash/player.png"
+		}
+    ]
+}

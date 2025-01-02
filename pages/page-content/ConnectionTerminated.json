@@ -1,0 +1,23 @@
+{
+    "name": "Connection Terminated",
+    "description": "",
+	"banner": "../",
+	"links": [
+		{
+			"name": "Github",
+			"link": "https://github.com/jacobchartier/ConnectionTerminated"
+		}
+	],
+    "assets": [
+		{
+			"name": "Name",
+			"description": "Description",
+			"category": "Category",
+			"type": "TYPE",
+			"image": {
+                "path": "../assets/images/ConnectionTerminated/",
+                "alt": "Error"
+            }
+		}
+    ]
+}
