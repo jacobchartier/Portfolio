@@ -30,6 +30,7 @@ function sectionBuilder(data) {
     if(data.class) section.classList.add(data.class);
     if(data.id) section.id = data.id;
     
+    // Create de title of the section
     if (data.title) { 
         var temp = document.createElement('h2');
         temp.classList.add('section-title');
@@ -37,6 +38,7 @@ function sectionBuilder(data) {
         section.appendChild(temp);
     }
 
+    // Create the description of the section
     if (data.description) {
         var temp = document.createElement('h2');
         temp.classList.add('section-description');
@@ -44,6 +46,7 @@ function sectionBuilder(data) {
         section.appendChild(temp);
     }
 
+    // Add the content of the section
     if (data.content) {
         var temp = document.createElement('div');
         temp.classList.add('card');
