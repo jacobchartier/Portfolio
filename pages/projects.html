@@ -66,84 +66,6 @@
         </header>
 
         <main>
-            <!-- Section #1 (Portfolio) -->
-            <section>
-                <div class="section-left left">
-                    <h4 class="section-title">Portfolio</h4>
-                    <p class="section-subtitle"><i class="fa-solid fa-user"></i></i> PROJET PERSONNEL &#128900; <span class="html"><i class="fa-brands fa-html5"></i> HTML</span> <span class="css"><i class="fa-brands fa-css"></i> CSS</span> <span class="javascript"><i class="fa-brands fa-js"></i> JAVASCRIPT</span> </p>
-                    <p class="section-description">This is my personal portfolio made using HTML, CSS, JavaScript and tools like Bootstrap and jQuery.</p>
-                </div>
-                <div class="section-right right">
-                    <div class="section-media">
-                    </div>
-                </div>
-            </section>
-
-            <!-- Section #2 (Connection Terminated) -->
-            <section>
-                <div class="section-left left">
-                    <h4 class="section-title">Connection Terminated</h4>
-                    <p class="section-subtitle"><i class="fa-solid fa-graduation-cap"></i> PROJET ACADÉMIQUE &#128900; <span class="csharp">C#</span></p>
-                    <p class="section-description">Turn-based open world game made with Unity, where you need to fight enemies with different items and attack.</p>
-                </div>
-
-                <div class="section-right right">
-                    <div class="section-media">
-                        <img src="../assets/images/ConnectionTerminated/shop.png" alt="" class="image-small" height="50px">
-                        <img src="../assets/images/ConnectionTerminated/inventory.png" alt="" class="image-small" height="50px">
-                        <img src="../assets/images/ConnectionTerminated/invfile.png" alt="" class="image-small" height="50px">
-                    </div>
-                </div>
-            </section>
-
-            <!-- Section #3 (Rythmic Slash) -->
-            <section>
-                <div class="section-left left">
-                    <h4 class="section-title">Rythmic Slash</h4>
-                    <p class="section-subtitle"><i class="fa-solid fa-graduation-cap"></i> PROJET ACADÉMIQUE &#128900; <span class="csharp">C#</span></p>
-                    <p class="section-description">Platform game made with Unity 2D, where you need to reach the end of the level while avoiding or fighting the enemies.</p>
-                </div>
-
-                <div class="section-right right">
-                    <div class="section-media">
-                        <img src="../assets/images/RythmicSlash/player.png" alt="" class="image-small" height="50px">
-                        <img src="../assets/images/RythmicSlash/gameplay.png" alt="" class="image-small" height="50px">
-                    </div>
-                </div>
-            </section>
-
-            <!-- Section #4 (Multiplayer Test) -->
-            <section>
-                <div class="section-left left">
-                    <h4 class="section-title">Multiplayer Test</h4>
-                    <p class="section-subtitle"><i class="fa-solid fa-flask"></i></i> EXPÉRIMENTATION &#128900; <span class="csharp">C#</span></p>
-                    <p class="section-description">Small multiplayer project to learn how a multiplayer game is made.</p>
-                </div>
-                <div class="section-right right">
-                    <div class="section-media">
-                        <img src="../assets/images/MultiplayerTest/mainmenu.png" alt="" class="image-small" height="50px">
-                        <img src="../assets/images/MultiplayerTest/showcase.png" alt="" class="image-small" height="50px">
-                    </div>
-                </div>
-            </section>
-
-            <!-- Section #5 (The Last Bite) -->
-            <section>
-                <div class="section-left left">
-                    <h4 class="section-title">The Last Bite</h4>
-                    <p class="section-subtitle"><i class="fa-solid fa-graduation-cap"></i> PROJET ACADÉMIQUE &#128900; <span class="csharp">C#</span></p>
-                    <p class="section-description">Platform game made with a custom engine based on the SDL2 library, where you need to collect space ship pieces to clear the level.</p>
-                </div>
-                <div class="section-right right">
-                    <div class="section-media">
-                        <img src="../assets/images/TheLastBite/gameplay.png" alt="" class="image-small" height="50px">
-                        <img src="../assets/images/TheLastBite/menu.png" alt="" class="image-small" height="50px">
-                        <img src="../assets/images/TheLastBite/plutonium.png" alt="" class="image-small" height="50px">
-                        <img src="../assets/images/TheLastBite/thruster.png" alt="" class="image-small" height="50px">
-                        <img src="../assets/images/TheLastBite/logo.png" alt="" class="image-small" height="50px">
-                    </div>
-                </div>
-            </section>
         </main>
     </body>
 
@@ -151,6 +73,20 @@
         <div class="row">
             <h2 class="title">Jacob Chartier</h2>
             <div>
+                <aside>
+                    <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Tous les projets</h4>
+                        <a onclick="typewritterTransition('nav-subtitle-breadcrumbs', 'project-breadcrumbs-portfolio'), loadProject('Portfolio')" href="#project-portfolio" class="card-description">Portfolio</a><br>
+                        <a onclick="typewritterTransition('nav-subtitle-breadcrumbs', 'project-breadcrumbs-connectionterminated'), loadProject('ConnectionTerminated')" href="#project-connectionterminated" class="card-description">Connection Terminated</a><br>
+                        <a onclick="typewritterTransition('nav-subtitle-breadcrumbs', 'project-breadcrumbs-rythmicslash'), loadProject('RythmicSlash')" href="#project-rythmicslash" class="card-description">Rythmic Slash</a><br>
+                        <a onclick="typewritterTransition('nav-subtitle-breadcrumbs', 'project-breadcrumbs-multiplayertest'), loadProject('MultiplayerTest')" href="#project-multiplayertest" class="card-description">Multiplayer Test</a><br>
+                        <a onclick="typewritterTransition('nav-subtitle-breadcrumbs', 'project-breadcrumbs-towerdefense'), loadProject('TowerDefense')" href="#project-towerdefense" class="card-description">Tower Defense</a><br>
+                        <a onclick="typewritterTransition('nav-subtitle-breadcrumbs', 'project-breadcrumbs-thelastbite'), loadPage('page-content/TheLastBite.json')" href="#project-thelastbite" class="card-description">The Last Bite</a><br>
+                        <a onclick="loadPage('page-content/page.json')" href="#" class="card-description">page loader</a><br>
+                    </div>
+                </div>
+            </aside>
                 <a class="title" href="https://github.com/jacobchartier/"><i class="fa-brands fa-github"></i></a>
                 <a class="title" href="https://linkedin.com/in/jacobchartier/"><i class="fa-brands fa-linkedin"></i></a>
                 <a class="title" href=""><i class="fa-brands fa-codepen"></i></a>

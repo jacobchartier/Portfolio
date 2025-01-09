@@ -13,7 +13,7 @@ $(document).ready(function() {
 
         isNavbarRendered = true;
 
-        $("header, section, footer").delay(500).each(function (index) {
+        $("header, footer").delay(500).each(function (index) {
             $(this)
               .delay(index * 1200) // Delay based on the index (e.g., 200ms for each item)
               .queue(function (next) {
@@ -30,7 +30,7 @@ $(document).ready(function () {
   
     // Check and animate elements on scroll
     function animateOnScroll() {
-        $("header, section, footer").each(function (index) {
+        $("header, footer").each(function (index) {
               $(this)
                 .delay(index * 1200) // Delay based on the index (e.g., 200ms for each item)
                 .queue(function (next) {
