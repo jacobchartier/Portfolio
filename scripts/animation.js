@@ -27,7 +27,6 @@ $(document).ready(function() {
 });
 
 $(document).ready(function () {
-  
     // Check and animate elements on scroll
     function animateOnScroll() {
         $("header, footer").each(function (index) {
