@@ -189,6 +189,10 @@ header {
     font-weight: 700;
 }
 
+.header-subtitle {
+    font-size: 33px;
+}
+
 .header-description {
     margin-top: 50px;
     font-size: 30px;
