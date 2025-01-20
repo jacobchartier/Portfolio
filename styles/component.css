@@ -156,3 +156,12 @@ a {
     z-index: 1;
   }
   
+#link-projects {
+    width: max-content;
+}
+#link-background {
+    width: max-content;
+}
+#link-contact {
+    width: max-content;
+}
